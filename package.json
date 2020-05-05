@@ -1,0 +1,19 @@
+{
+  "name": "dcraw-builds-darwin",
+  "version": "1.0.0",
+  "description": "darwin build of dcraw.c",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajzat34/dcraw-builds-darwin.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/ajzat34/dcraw-builds-darwin/issues"
+  },
+  "homepage": "https://github.com/ajzat34/dcraw-builds-darwin#readme"
+}
