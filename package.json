@@ -1,5 +1,5 @@
 {
-  "name": "dcraw-builds-darwin",
+  "name": "dcrawjs-darwin",
   "version": "1.0.0",
   "description": "darwin build of dcraw.c",
   "os" : [ "darwin" ],
