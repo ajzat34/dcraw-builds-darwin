@@ -6,8 +6,11 @@ module.exports = function(source) {
     try {
       const sh = spawn(path.join(__dirname + '/dcraw'), ['-T','-6','-c',source])
       let chunks = []
-      sh.on('data', (chunk) => {
+      sh.stdout.on('data', (chunk) => {
         chunks.push(chunk)
+      })
+      sh.stderr.on('data', (data) => {
+        console.log(data.toString())
       })
       sh.on('close', () => {
         resolve(Buffer.concat(chunks))
