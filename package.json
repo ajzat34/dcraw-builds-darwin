@@ -1,6 +1,6 @@
 {
   "name": "dcrawjs-darwin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "darwin build of dcraw.c",
   "os" : [ "darwin" ],
   "main": "index.js",
