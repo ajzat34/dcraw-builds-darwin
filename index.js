@@ -6,8 +6,12 @@ module.exports = function(source) {
     try {
       const sh = spawn(path.join(__dirname + '/dcraw'), ['-T','-6','-c',source])
       let chunks = []
-      sh.on('data', chunk => chunks.push(chunk))
-      sh.on('close', () => resolve(Buffer.concat(chunks)))
+      sh.on('data', (chunk) => {
+        chunks.push(chunk)
+      })
+      sh.on('close', () => {
+        resolve(Buffer.concat(chunks))
+      })
     } catch(err){
       reject(err)
     }
